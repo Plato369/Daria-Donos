@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daria Donos The Jewellery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            /* Using a subtle gradient instead of a solid color for a richer look */
+            background-color: #4B5335; /* Fallback green */
+            background-image: linear-gradient(135deg, #4B5335 0%, #5A6340 100%);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .font-corinthia {
+            font-family: 'Corinthia', cursive;
+            /* Adding a subtle text shadow for depth */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            line-height: 1.2; /* Adjust line height for two lines */
+        }
+        .btn-custom-brown {
+            background-color: #8B4513; /* Custom brown for buttons */
+            /* Adding a subtle gradient to buttons */
+            background-image: linear-gradient(to bottom, #8B4513, #7A3D11);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08); /* Softer shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+        }
+        .btn-custom-brown:hover {
+            background-color: #A0522D;
+            background-image: linear-gradient(to top, #8B4513, #A0522D); /* Invert gradient on hover */
+            transform: translateY(-2px) scale(1.03); /* Lift and slightly enlarge on hover */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.1);
+        }
+        /* Ensure content is vertically centered and takes full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Full viewport height */
+            padding: 1rem; /* Padding for smaller screens */
+            animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+        }
+
+        /* Icon styling */
+        .icon {
+            width: 1.25em; /* 20px if text is 16px */
+            height: 1.25em; /* 20px if text is 16px */
+            margin-right: 0.5em; /* 8px */
+            vertical-align: middle; /* Align icon with text */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container text-white text-center">
+        <h1 class="font-corinthia text-6xl md:text-8xl mb-16 animate-fadeIn" style="animation-delay: 0.2s;">
+            Daria Donos<br>The jewellry
+        </h1>
+
+        <div class="space-y-6 md:space-y-0 md:space-x-8 flex flex-col md:flex-row">
+            <a href="https://t.me/dariadonosjewelry" target="_blank" rel="noopener noreferrer"
+               class="btn-custom-brown text-white font-semibold py-4 px-10 rounded-xl text-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center animate-fadeIn" style="animation-delay: 0.4s;">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M21.446 3.479c-.479-.48-1.13-.703-1.803-.695L4.201 5.583c-1.35.121-2.219.942-2.132 2.235.073 1.091.763 1.639 1.761 2.026l3.454 1.322 1.321 3.455c.388.997.935 1.687 2.027 1.76.072.005.145.007.217.007 1.207 0 1.999-.786 2.234-2.132l2.798-15.44c.074-.674-.147-1.325-.693-1.804zm-4.074 3.296l-6.599 6.036-2.43-2.905 9.029-3.131zm2.293 9.035l-3.131 9.028-2.905-2.431 6.036-6.597z"/></svg>
+                Telegram
+            </a>
+
+            <a href="https://www.instagram.com/daria.donos.the.jewels?igsh=aTlxMnQ5N29jbHpn&utm_source=qr" target="_blank" rel="noopener noreferrer"
+               class="btn-custom-brown text-white font-semibold py-4 px-10 rounded-xl text-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center animate-fadeIn" style="animation-delay: 0.6s;">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.359 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Instagram
+            </a>
+        </div>
+
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-30 animate-fadeIn" style="animation-delay: 0.8s;">
+            <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 40 C 20 20, 30 20, 40 40 S 50 60, 60 40 S 70 20, 80 40 S 90 60, 100 40" stroke="white" stroke-width="2" fill="transparent" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
